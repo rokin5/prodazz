@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой сайт</title>
+	<style>
+	    * {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+	        font-family: Arial, sans-serif;
+	    }
+	    
+	    body {
+	        background-color: #f5f5dc; /* Светло-бежевый */
+			font-family: Arial, sans-serif;
+	    }
+
+	    .glav {
+	        background-color: #2c3e50; /* Темно-синий */
+	        width: 96%;
+	        height: 10vh;
+	        position: absolute;
+	        top: 15px;
+	        left: 30px;
+	        margin: 0 auto;
+	        border-radius: 17px;
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	    }
+
+	    .textglav {
+			
+			justify-content: center;
+	        display: flex;
+	        gap: 24vh;
+	    }
+		
+		.textglav a {
+		font-size: 10px; 
+		}
+
+	    .textglav a {
+	        color: #ffffff; /* Белый */
+	        text-decoration: none;
+	        font-size: 18px;
+	        padding: 10px 15px;
+	        border-radius: 5px;
+	        transition: 0.3s;
+	    }
+
+	    .textglav a:hover {
+	        background-color: #1abc9c; /* Бирюзовый */
+	    }
+
+	    .rek {
+	        position: absolute;
+	        top: 18vh;
+	        left: 88vh;
+	        font-size: 24px;
+	        color: #2c3e50;
+	    }
+
+	    .otv {
+	        position: absolute;
+	        top: 20vh;
+	        left: 5vh;
+	        font-size: 18px;
+	        color: #34495e;
+	    }
+		
+
+	    .tayson {
+	        background-color: #ffffff; /* Белый */
+	        position: absolute;
+	        top: 27vh;
+	        left: 5vh;
+	        width: 94%;
+	        height: 50vh;
+	        border-radius: 15px;
+	        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	        padding: 20px;
+	    }
+		
+		.per1{
+		position: absolute;
+		left: 5vh; 
+		color: black;
+		font-size: 4vh;
+		color: inherit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+		.lav{
+		width: 35vh;
+		height: 22vh;
+		position: absolute;
+		top: 10vh;
+		left: 4vh;
+		border-radius: 5vh;
+		}
+		
+		.lav2{
+		width: 35vh;
+		height: 23vh;
+		position: absolute;
+		top: 10vh;
+		left: 41vh;
+		border-radius: 5vh;
+		}
+		
+.in1 {
+    position: absolute;
+    top: 1vh;
+    left: 81vh;
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease-in-out;
+}
+
+.in1:hover {
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.4);
+}
+
+
+		
+		.cs {
+    position: absolute;
+    top: 33vh;
+    left: 5vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cs:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.in {
+    position: absolute;
+    top: 33vh;
+    left: 42vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.8vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.in:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		
+		.iin {
+		background-color: #4CAF50; /* Нежный зеленый */
+		color: white; /* Белый текст для контраста */
+		position: absolute;
+		top: 12vh;
+		left: 80vh;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: "Roboto", sans-serif; /* Современный и читаемый шрифт */
+		padding: 8px 12px;
+		border-radius: 6px; /* Закругленные углы */
+		transition: background-color 0.3s ease-in-out, transform 0.2s;
+	}
+
+	.iin:hover {
+    background-color: #388E3C; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение */
+}
+
+		
+.inn1 {
+    position: absolute;
+    top: 13.5vh;
+    left: 92vh;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #27ae60; /* Зеленый цвет для цены */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Убирает подчеркивание */
+    display: inline-block; /* Избегает возможных артефактов */
+    line-height: 1; /* Убирает лишнее пространство под текстом */
+    padding: 0; /* Убирает лишние отступы */
+    margin: 0; /* Убирает возможные внешние отступы */
+}
+
+
+		
+		.iiin{
+		position: absolute;
+		top: 22vh;
+		left: 80vh;
+		color: black;
+		font-size: 2.5vh;
+		color: inberit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+		.steam{
+		width: 4vh;
+		height: 4vh;
+		position: absolute;
+		top: 13vh;
+		left: 134vh;
+		}
+		
+		.steam1{
+		width: 4vh;
+		height: 4vh;
+		position: absolute;
+		top: 66vh;
+		left: 134vh;
+		z-index: 1; /* ниже изображения */
+
+		}
+		
+		.steam2{
+		width: 4vh;
+		height: 4vh;
+		position: absolute;
+		top: 123vh;
+		left: 136vh;
+		z-index: 1; /* ниже изображения */
+
+		}
+		
+		.steam3{
+		width: 4vh;
+		height: 4vh;
+		position: absolute;
+		top: 180vh;
+		left: 132vh;
+		z-index: 1; /* ниже изображения */
+		}
+		
+		
+		
+			    .rek1 {
+	        position: absolute;
+	        top: 18vh;
+	        left: 88vh;
+	        font-size: 24px;
+	        color: #2c3e50;
+	    }
+
+	    .otv1 {
+	        position: absolute;
+	        top: 20vh;
+	        left: 5vh;
+	        font-size: 18px;
+	        color: #34495e;
+	    }
+		
+
+	    .tay {
+	        background-color: #ffffff; /* Белый */
+	        position: absolute;
+	        top: 80vh;
+	        left: 5vh;
+	        width: 94%;
+	        height: 54vh;
+	        border-radius: 15px;
+	        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	        padding: 20px;
+	    }
+		
+		.per11{
+		position: absolute;
+		left: 5vh; 
+		color: black;
+		font-size: 4vh;
+		color: inherit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+		.lav1{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 4vh;
+		border-radius: 2vh;
+		}
+		
+		.new{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 28vh;
+		border-radius: 2vh;
+		}
+		
+		.exile{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 54vh;
+		border-radius: 2vh;
+		}
+		
+		.lostark{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 3vh;
+		border-radius: 2vh;
+		}
+		
+		.exx{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 28vh;
+		border-radius: 2vh;
+		}
+		
+		.among{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 54vh;
+		border-radius: 2vh;
+		}
+		
+.in11 {
+    position: absolute;
+    top: 2vh;
+    left: 81vh;
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease-in-out;
+}
+
+.in11:hover {
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.4);
+}
+
+
+		
+		.cs1 {
+    position: absolute;
+    top: 24vh;
+    left: 5vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cs1:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.lostark126 {
+    position: absolute;
+    top: 48vh;
+    left: 4vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.lostark126:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.in0 {
+    position: absolute;
+    top: 24vh;
+    left: 29vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.in0:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.ex62 {
+    position: absolute;
+    top: 48vh;
+    left: 29vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.ex62:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+		.among61 {
+    position: absolute;
+    top: 48vh;
+    left: 55vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.among61:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+		.ex217 {
+    position: absolute;
+    top: 24vh;
+    left: 54vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.ex217:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+		
+		.iin1 {
+		background-color: #4CAF50; /* Нежный зеленый */
+		color: white; /* Белый текст для контраста */
+		position: absolute;
+		top: 12vh;
+		left: 80vh;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: "Roboto", sans-serif; /* Современный и читаемый шрифт */
+		padding: 8px 12px;
+		border-radius: 6px; /* Закругленные углы */
+		transition: background-color 0.3s ease-in-out, transform 0.2s;
+	}
+
+	.iin1:hover {
+    background-color: #388E3C; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение */
+}
+
+		
+.inn11 {
+    position: absolute;
+    top: 13.5vh;
+    left: 92vh;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #27ae60; /* Зеленый цвет для цены */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Убирает подчеркивание */
+    display: inline-block; /* Избегает возможных артефактов */
+    line-height: 1; /* Убирает лишнее пространство под текстом */
+    padding: 0; /* Убирает лишние отступы */
+    margin: 0; /* Убирает возможные внешние отступы */
+}
+
+
+		
+		.iiin1{
+		position: absolute;
+		top: 22vh;
+		left: 80vh;
+		color: black;
+		font-size: 2.5vh;
+		color: inberit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+		
+		
+			.tay1 {
+	        background-color: #ffffff; /* Белый */
+	        position: absolute;
+	        top: 137vh;
+	        left: 5vh;
+	        width: 94%;
+	        height: 54vh;
+	        border-radius: 15px;
+	        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	        padding: 20px;
+	    }
+		
+			.tay2 {
+	        background-color: #ffffff; /* Белый */
+	        position: absolute;
+	        top: 194vh;
+	        left: 5vh;
+	        width: 94%;
+	        height: 55vh;
+	        border-radius: 15px;
+	        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	        padding: 20px;
+	    }
+		
+		.akt{
+		position: absolute;
+		left: 5vh; 
+		color: black;
+		font-size: 4vh;
+		color: inherit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+		.foto{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 4vh;
+		border-radius: 2vh;
+		}
+		
+		.cyber{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 28vh;
+		border-radius: 2vh;
+		}
+		
+		.hell{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 54vh;
+		border-radius: 2vh;
+		}
+		
+		.foot{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 3vh;
+		border-radius: 2vh;
+		}
+		
+		.cs3{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 28vh;
+		border-radius: 2vh;
+		}
+		
+		.world{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 54vh;
+		border-radius: 2vh;
+		}
+		
+		
+		.pubg2272 {
+    position: absolute;
+    top: 24vh;
+    left: 5vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.pubg2272:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+.in1 {
+    position: absolute;
+    top: 1vh;
+    left: 81vh;
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+.in11:hover {
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.4);
+}
+
+		.cyber33 {
+    position: absolute;
+    top: 24vh;
+    left: 29vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cyber33:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+
+
+		.cs18 {
+    position: absolute;
+    top: 48vh;
+    left: 29vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cs18:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+		.world20 {
+    position: absolute;
+    top: 48vh;
+    left: 55vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.world20:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+		.hell29 {
+    position: absolute;
+    top: 24vh;
+    left: 54vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.hell29:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.foot28 {
+    position: absolute;
+    top: 48vh;
+    left: 4vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.foot28:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+
+		.iin2 {
+		background-color: #4CAF50; /* Нежный зеленый */
+		color: white; /* Белый текст для контраста */
+		position: absolute;
+		top: 12vh;
+		left: 80vh;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: "Roboto", sans-serif; /* Современный и читаемый шрифт */
+		padding: 8px 12px;
+		border-radius: 6px; /* Закругленные углы */
+		transition: background-color 0.3s ease-in-out, transform 0.2s;
+	}
+
+	.iin2:hover {
+    background-color: #388E3C; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение */
+}
+
+
+		.iiin3{
+		position: absolute;
+		top: 22vh;
+		left: 80vh;
+		color: black;
+		font-size: 2.5vh;
+		color: inberit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+
+.summ {
+    position: absolute;
+    top: 13.5vh;
+    left: 145vh;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #27ae60; /* Зеленый цвет для цены */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Убирает подчеркивание */
+    display: inline-block; /* Избегает возможных артефактов */
+    line-height: 1; /* Убирает лишнее пространство под текстом */
+    padding: 0; /* Убирает лишние отступы */
+    margin: 0; /* Убирает возможные внешние отступы */
+}
+
+
+
+
+
+
+		.iiin3{
+		position: absolute;
+		top: 22vh;
+		left: 80vh;
+		color: black;
+		font-size: 2.5vh;
+		color: inberit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+		
+		.black{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 4vh;
+		border-radius: 2vh;
+		}
+		
+		.foto1{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 28vh;
+		border-radius: 2vh;
+		}
+		
+		.cs4{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 10vh;
+		left: 54vh;
+		border-radius: 2vh;
+		}
+		
+		.warf{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 3vh;
+		border-radius: 2vh;
+		}
+		
+		.primal{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 28vh;
+		border-radius: 2vh;
+		}
+		
+		.ins{
+		width: 22vh;
+		height: 13vh;
+		position: absolute;
+		top: 34vh;
+		left: 54vh;
+		border-radius: 2vh;
+		}
+		
+		
+		.black126 {
+    position: absolute;
+    top: 24vh;
+    left: 5vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.black126:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.foto31 {
+    position: absolute;
+    top: 24vh;
+    left: 29vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.foto31:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.cs24 {
+    position: absolute;
+    top: 24vh;
+    left: 54vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cs24:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.warf13 {
+    position: absolute;
+    top: 48vh;
+    left: 4vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.warf13:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.primal7 {
+    position: absolute;
+    top: 48vh;
+    left: 29.2vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.primal7:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+		.ins6 {
+    position: absolute;
+    top: 48vh;
+    left: 55vh;
+    color: #2c3e50; /* Темно-синий */
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.ins6:hover {
+    color: #1abc9c; /* Бирюзовый */
+    transform: scale(1.1);
+}
+
+.nazvanie {
+    position: absolute;
+    top: 1vh;
+    left: 81vh;
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease-in-out;
+}
+
+.nazvanie:hover {
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.4);
+}
+
+		.opis1{
+		position: absolute;
+		top: 22vh;
+		left: 80vh;
+		color: black;
+		font-size: 2.5vh;
+		color: inberit;
+		font-weight: bold;
+		text-decoration: none;
+		}
+		
+	</style>
+</head>
+<body>
+    <div class="glav">
+        <div class="textglav">
+            <a href="index.html">покупка стим</a>
+            <a href="#">отзывы</a>
+            <a href="#">общая информация</a>
+            <a href="kabinet.html">личный кабинет</a>
+        </div>
+    </div>
+
+    <h1 class="rek">аккаунты стим</h1>
+		
+    <div class="tayson">
+	<a href="lavash.html"></a>
+	        <a href="https://lzt.market/155818657/steam-preview?type=profiles"><img src="steam.png" alt="Описание" title="профиль steam" class="steam"></a>
+			<a href="https://lzt.market/158793899/steam-preview?type=profiles"><img src="steam.png" alt="Описание" title="профиль steam" class="steam1"></a>
+			<a href="https://lzt.market/155818657/steam-preview?type=profiles"><img src="steam.png" alt="Описание" title="профиль steam" class="steam2"></a>
+			<a href="https://lzt.market/160148823/steam-preview?type=profiles"><img src="steam.png" alt="Описание" title="профиль steam" class="steam3"></a>
+        <a href="lavash.html" class="per1">актуальные игры</a>
+        <a href="lavash.html"><img src="cs2.jpg" class="lav"></a>
+		        <a href="lavash.html"><img src="rust.jpg" class="lav2"></a>
+				<a href="lavash.html" class="cs">CS2<br>449 ч.</a>
+				<a href="lavash.html" class="in">Rust<br>0 ч.</a>
+		<a href="lavash.html" class="in1">Рacт, стим аккаунт, полный доступ, родная почта в комплекте, можно сменить почту.</a>
+		<a href="lavash.html" class="iin"> 200 ₽</a>
+		<a href="lavash.html" class="inn1">Стоимость инвентаря: 0 ₽</a>
+		<a href="lavash.html" class="iiin">Продаётся Steam-аккаунт с игрой Rust, предоставляется полный доступ, в комплекте идёт родная почта, что позволяет безопасно владеть аккаунтом. Почту можно сменить на свою, обеспечивая полный контроль. Аккаунт не имеет Prime-статуса, что может повлиять на доступ к некоторым функциям.</a>
+
+    </div>
+
+		    <div class="tay">
+	<a href="lavash.html"></a>
+        <a href="lavash.html" class="per11">актуальные игры</a>
+		
+        <a href="lavash.html"><img src="cs2.jpg" class="lav1"></a>
+		<a href="lavash.html"><img src="new.jpg" class="new"></a>
+		<a href="lavash.html"><img src="exile.jpg" class="exile"></a>
+		<a href="lavash.html"><img src="lostark.jpg" class="lostark"></a>
+		<a href="lavash.html"><img src="exx.jpg" class="exx"></a>
+		<a href="lavash.html"><img src="among.jpg" class="among"></a>
+				
+		<a href="lavash.html" class="cs1">CS2 Prime<br>796 ч.</a>
+		<a href="lavash.html" class="in1">Cs:go prime 5 medals+diablo+new world+games</a>
+		<a href="lavash.html" class="in0">New World:<br> Aeternum<br> 254 ч.</a>
+		<a href="lavash.html" class="ex217">Path of Exile 2<br>217 ч.</a>
+		<a href="lavash.html" class="lostark126">Lost Ark<br> 126 ч.</a>
+		<a href="lavash.html" class="ex62">Path of Exile<br> 62 ч.</a>
+		<a href="lavash.html" class="among61">Among Us<br> 61 ч.</a>
+		
+		<a href="lavash.html" class="iin1"> 1000 ₽</a>
+		<a href="lavash.html" class="inn11">Стоимость инвентаря: 40 ₽</a>
+		<a href="lavash.html" class="iiin1"> Продаётся Steam-аккаунт с CS:GO Prime, 5 медалями, Diablo III + Reaper of Souls, New World и другими играми. В CS:GO есть Prime-статус и 5 медалей. В Diablo III открыто дополнение Reaper of Souls. В New World прокачан персонаж. На аккаунте также есть другие платные игры.</a>
+    </div>
+	
+			    <div class="tay1">
+	<a href="lavash.html"></a>
+        <a href="lavash.html" class="akt">актуальные игры</a>
+		
+        <a href="lavash.html"><img src="foto.jfif" class="foto"></a>
+		<a href="lavash.html"><img src="cyber.jfif" class="cyber"></a>
+		<a href="lavash.html"><img src="hell.jpg" class="hell"></a>
+		<a href="lavash.html"><img src="foot.jfif" class="foot"></a>
+		<a href="lavash.html"><img src="cs2.jpg" class="cs3"></a>
+		<a href="lavash.html"><img src="world.jpg" class="world"></a>
+				
+		<a href="lavash.html" class="in11">CS2 Prime (БЕЗ ДОСТУПА К SOCIAL CLUB)</a>
+		<a href="lavash.html" class="pubg2272">PUBG<br> 2272 ч.</a>
+		<a href="lavash.html" class="cyber33">Cyberpunk 2077<br> 33 ч.</a>
+		<a href="lavash.html" class="hell29">Hell Let Loose<br>29 ч.</a>
+		<a href="lavash.html" class="foot28">eFootball 2024<br> 28 ч.</a>
+		<a href="lavash.html" class="cs18">CS2 Prime<br> 18 ч.</a>
+		<a href="lavash.html" class="world20">World War 3<br> 20 ч.</a>
+		
+		<a href="lavash.html" class="iin2"> 1150 ₽</a>
+		<a href="lavash.html" class="inn11">Стоимость инвентаря: 801 ₽</a>
+		<a href="lavash.html" class="summ">общая сумма игр: 12 305 ₽</a>
+		<a href="lavash.html" class="iiin3"> Продается Steam-аккаунт с CS2 Prime (БЕЗ ДОСТУПА К SOCIAL CLUB). После покупки вы получите данные от аккаунта и доступ к временной почте, однако доступ к родной почте отсутствует. На аккаунте есть CS2 Prime и несколько популярных игр, включая шутеры, спортивные симуляторы и выживание. Аккаунт полностью готов к использованию, можно играть сразу после покупки. Гарантия 24 часа. Цена: 800 ₽. Мгновенная выдача данных после покупки!</a>
+    </div>
+	
+	
+			    <div class="tay2">
+	<a href="lavash.html"></a>
+        <a href="lavash.html" class="akt">актуальные игры</a>
+		
+        <a href="lavash.html"><img src="black.jpg" class="black"></a>
+		<a href="lavash.html"><img src="foto.jfif" class="foto1"></a>
+		<a href="lavash.html"><img src="cs2.jpg" class="cs4"></a>
+		<a href="lavash.html"><img src="warf.jpg" class="warf"></a>
+		<a href="lavash.html"><img src="primal.jpg" class="primal"></a>
+		<a href="lavash.html"><img src="ins.jpg" class="ins"></a>
+				
+		<a href="lavash.html" class="black126">Black Squad<br> 126 ч.</a>
+		<a href="lavash.html" class="foto31">PUBG<br> 31 ч.</a>
+		<a href="lavash.html" class="cs24">CS2 Prime<br>24 ч.</a>
+		<a href="lavash.html" class="warf13">Chivalry:<br> Medieval Warfare<br> 13 ч.</a>
+		<a href="lavash.html" class="primal7">Primal Carnage:<br> Extinction<br> 7 ч.</a>
+		<a href="lavash.html" class="ins6">Insurgency<br> 6 ч.</a>
+		
+		<a href="lavash.html" class="nazvanie">CS2 Prime 24 ч.+3 медали | PUBG 31 ч. | Black Squad 126 ч. | last played on 6 Apr, 2024</a>
+		
+		<a href="lavash.html" class="opis1"> Steam-аккаунт зарегистрирован в 2015 году, имеет 8 уровень и несколько друзей. В библиотеке около 40 игр, из которых 14 актуальных, включая CS2 Prime (с медалями), PUBG, Black Squad, Chivalry: Medieval Warfare, Insurgency, Garry's Mod и другие. Последняя активность была в 2024 году, а в CS2 играли в конце 2023-го. Торговая площадка временно заблокирована до марта 2025 года. Аккаунт защищен Steam Guard через Steam Desktop Authenticator (выдается .mafile). Инвентаря нет, баланс пустой. Страна аккаунта – Колумбия.</a>
+		<a href="lavash.html" class="iin2"> 820 ₽</a>
+		<a href="lavash.html" class="inn11">Стоимость инвентаря: 0 ₽</a>
+		<a href="lavash.html" class="summ">общая сумма игр: 5 027 ₽</a>
+    </div>
+</body>
+</html>

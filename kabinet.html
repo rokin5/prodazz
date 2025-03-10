@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+        body {
+	        background-color: #f5f5dc; /* Светло-бежевый */
+			font-family: Arial, sans-serif;
+        }
+
+        button {
+			padding: 1vh;
+			position: absolute;
+			top: 50vh;
+            border: none;
+            border-radius: 5px;
+            background: #ff4444;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #cc0000;
+        }
+		
+	    .glav {
+	        background-color: #2c3e50; /* Темно-синий */
+	        width: 96%;
+	        height: 10vh;
+	        position: absolute;
+	        top: 15px;
+	        left: 30px;
+	        margin: 0 auto;
+	        border-radius: 17px;
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	    }
+
+	    .textglav {
+			
+			justify-content: center;
+	        display: flex;
+	        gap: 24vh;
+	    }
+		
+		.textglav a {
+		font-size: 10px; 
+		}
+
+	    .textglav a {
+	        color: #ffffff; /* Белый */
+	        text-decoration: none;
+	        font-size: 18px;
+	        padding: 10px 15px;
+	        border-radius: 5px;
+	        transition: 0.3s;
+	    }
+
+	    .textglav a:hover {
+	        background-color: #1abc9c; /* Бирюзовый */
+	    }
+		
+		.vait{
+		position: absolute;
+		top: 72vh;
+		left: 100vh;
+		width: 10vh;
+		}
+		
+		.liz{
+		position: absolute;
+		top: 12vh;
+		left: 81vh;
+		}
+		
+		.imi{
+		position: absolute;
+		top: 27vh;
+		left: 37vh;
+		}
+		
+		.email{
+		position: absolute;
+		top: 23vh;
+		left: 37vh;
+		
+		}
+		
+		.mem{
+		position: absolute;
+		top: 25vh;
+		left: 4vh;
+		width: 30vh;
+		height:40vh;
+		border-radius: 0.6vh;
+		}
+		
+		.balans{
+		color: green;
+		position: absolute;
+		top: 64vh;
+		left: 7.8vh;
+		}
+		
+		.st{
+		position: absolute;
+		top: 32vh;
+		left: 37vh;
+		}
+		
+		.poku{
+		position: absolute;
+		top: 39vh;
+		left: 40vh;
+		}
+		
+		.poku1{
+		position: absolute;
+		top: 39vh;
+		left: 80vh;
+		}
+		
+		.poku2{
+		position: absolute;
+		top: 39vh;
+		left: 105vh;
+		}
+		
+    </style>
+</head>
+<body>
+<div>
+<h2 class="st"> статистика аккаунта:</h2>
+<h3 class="poku"> аккантов куплено 0 ₽</h3>
+<h3 class="poku1"> продано: 0 ₽</h3>
+<h3 class="poku2"> пополнено: 0 ₽</h3>
+</div>
+
+<img src="mem.jpg" class="mem" alt="описание" title="фото нельзя менять">
+
+<h2 class="balans">Баланс: 0 ₽<h2>
+
+    <div class="glav">
+        <div class="textglav">
+            <a href="index.html">покупка стим</a>
+            <a href="#">отзывы</a>
+            <a href="#">общая информация</a>
+            <a href="#">личный кабинет</a>
+        </div>
+		</div>
+
+<h1 class="liz">личный кабинет</h1>
+
+    <div class="container">
+        <p class="imi"><strong>Имя:</strong> <span id="userName"></span></p>
+        <p class="email"><strong>Email:</strong> <span id="userEmail"></span></p>
+        <button onclick="logout()" class="vait">Выйти</button>
+    </div>
+
+    <script>
+        document.getElementById("userName").textContent = localStorage.getItem("userName") || "Неизвестно";
+        document.getElementById("userEmail").textContent = localStorage.getItem("userEmail") || "Неизвестно";
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = "register.html";
+        }
+    </script>
+</body>
+</html>
