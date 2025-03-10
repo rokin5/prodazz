@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280"> <!-- Фиксированная ширина страницы -->
+    <meta name="viewport" content="width=1280"> <!-- Фиксированная ширина экрана -->
     <title>Личный кабинет</title>
     <style>
         body {
@@ -12,13 +12,14 @@
             padding: 0;
             width: 1280px; /* Фиксированная ширина */
             height: 720px; /* Фиксированная высота */
-            overflow: hidden; /* Отключаем скролл */
+            overflow: hidden; /* Убираем скролл */
         }
 
+        /* Навигационная панель */
         .glav {
             background-color: #2c3e50;
             width: 1220px;
-            height: 80px;
+            height: 70px;
             position: absolute;
             top: 15px;
             left: 30px;
@@ -31,7 +32,7 @@
 
         .textglav {
             display: flex;
-            gap: 200px;
+            gap: 160px;
         }
 
         .textglav a {
@@ -47,13 +48,16 @@
             background-color: #1abc9c;
         }
 
+        /* Заголовок */
         .liz {
             position: absolute;
             top: 100px;
-            left: 600px;
+            left: 560px;
             font-size: 28px;
+            font-weight: bold;
         }
 
+        /* Фото профиля */
         .mem {
             position: absolute;
             top: 180px;
@@ -61,69 +65,78 @@
             width: 250px;
             height: 350px;
             border-radius: 10px;
+            border: 2px solid #333;
         }
 
+        /* Баланс */
         .balans {
             color: green;
             position: absolute;
             top: 550px;
             left: 80px;
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: bold;
         }
 
+        /* Заголовок статистики */
         .st {
             position: absolute;
             top: 200px;
             left: 400px;
-            font-size: 22px;
+            font-size: 24px;
+            font-weight: bold;
         }
 
+        /* Пункты статистики */
         .poku {
             position: absolute;
             top: 250px;
             left: 400px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .poku1 {
             position: absolute;
             top: 250px;
             left: 700px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .poku2 {
             position: absolute;
             top: 250px;
             left: 1000px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
+        /* Имя и email */
         .imi {
             position: absolute;
             top: 320px;
             left: 400px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .email {
             position: absolute;
             top: 280px;
             left: 400px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
+        /* Кнопка выхода */
         .vait {
             position: absolute;
             top: 450px;
             left: 1000px;
-            width: 100px;
+            width: 120px;
             height: 40px;
             border: none;
             border-radius: 5px;
             background: #ff4444;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
             cursor: pointer;
         }
 
@@ -147,9 +160,9 @@
     <h1 class="liz">Личный кабинет</h1>
 
     <h2 class="st">Статистика аккаунта:</h2>
-    <h3 class="poku">Аккаунтов куплено: 0 ₽</h3>
-    <h3 class="poku1">Продано: 0 ₽</h3>
-    <h3 class="poku2">Пополнено: 0 ₽</h3>
+    <h3 class="poku">Куплено аккаунтов: 0 ₽</h3>
+    <h3 class="poku1">Продано аккаунтов: 0 ₽</h3>
+    <h3 class="poku2">Пополнено средств: 0 ₽</h3>
 
     <img src="mem.jpg" class="mem" alt="Фото профиля">
 
